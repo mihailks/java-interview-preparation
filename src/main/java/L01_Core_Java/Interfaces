@@ -1,0 +1,18 @@
+
+if we have a interface without any methods:
+ - marker interface
+
+ with one method:
+ @FunctionalInterface
+ - functional interface
+
+ with multiple methods
+ - normal interface;
+
+
+
+can we create an Object of an interface
+ - NO
+ we create a class that implement that interface and then we make new objects;
+
+
