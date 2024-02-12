@@ -6,13 +6,16 @@ public class Main {
         System.out.println("Main starts");
 
 //        ThreadOne threadOne = new ThreadOne();
-        ThreadOne threadOne = new ThreadOne("FirstThreadName");
+        Thread threadOne = new ThreadOne("FirstThreadName");
 
 //        threadOne.setDaemon(true); // ако искаме да си я направим на daemon thread. Така няма да се изпълни или поне да си довърши всичко, понеже приключи ли main() и тя се маха
-        threadOne.start();
+//        threadOne.start();
 
-        ThreadTwo threadTwo = new ThreadTwo();
-        threadTwo.run();
+//        ThreadTwo threadTwo = new ThreadTwo();
+//        threadTwo.run();
+
+        Thread threadTwo = new Thread(new ThreadTwo());
+        threadTwo.start();
 
         System.out.println("main exiting");
     }
